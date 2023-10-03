@@ -1,0 +1,29 @@
+.weather-app {
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 650;
+}
+.condition-img {
+  border-radius: 5px;
+  width: 200px;
+}
+.current-state {
+  margin-top: 30px;
+  font-size: larger;
+}
+.temp {
+  font-size: xx-large;
+}
+li {
+  list-style: none;
+}
+.forecast {
+  padding: 10px;
+}
+
+.credit {
+  text-align: center;
+  font-size: xx-small;
+}

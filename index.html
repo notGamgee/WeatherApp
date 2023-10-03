@@ -1,0 +1,106 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <title>Weather but Cute</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <form id="city-search">
+          <div class="row">
+            <div class="col-6">
+              <input
+                type="search"
+                placeholder="Find your city"
+                autocomplete="off"
+                class="form-control"
+                id="city-input"
+              />
+            </div>
+            <div class="col-3">
+              <button type="submit" class="form-control">Go!</button>
+            </div>
+            <div class="col-3">
+              <button type="button" class="btn btn-info">
+                Current Location
+              </button>
+            </div>
+          </div>
+        </form>
+        <div class="row">
+          <div class="col-6">
+            <h2>Your City</h2>
+            <img
+              class="condition-img"
+              src="src/images/cloudy.png"
+              alt="grey clouds"
+            />
+          </div>
+          <div class="col-6">
+            <div class="current-state">
+              <ul>
+                <li><span id="temp">Current Temperature °F</span></li>
+                <li id="day-of-week"></li>
+                <li id="date-and-time"></li>
+                <li>The humidity is 20%</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="forecast">
+          <div class="row">
+            <div class="col-2">
+              <div class="row">Tue</div>
+              <div class="row">🌧</div>
+              <div class="row">72°</div>
+            </div>
+            <div class="col-2">
+              <div class="row">Wed</div>
+              <div class="row">🌧</div>
+              <div class="row">72°</div>
+            </div>
+            <div class="col-2">
+              <div class="row">Thu</div>
+              <div class="row">🌧</div>
+              <div class="row">72°</div>
+            </div>
+            <div class="col-2">
+              <div class="row">Fri</div>
+              <div class="row">🌧</div>
+              <div class="row">72°</div>
+            </div>
+            <div class="col-2">
+              <div class="row">Sat</div>
+              <div class="row">🌧</div>
+              <div class="row">72°</div>
+            </div>
+            <div class="col-2">
+              <div class="row">Sun</div>
+              <div class="row">🌧</div>
+              <div class="row">72°</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="credit">
+        <a
+          href="https://www.flaticon.com/free-stickers/summer"
+          title="summer stickers"
+          >Summer stickers created by Stickers - Flaticon</a
+        >
+      </div>
+    </footer>
+    <script src="src/script.js"></script>
+  </body>
+</html>
